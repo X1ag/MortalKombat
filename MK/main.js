@@ -3,7 +3,7 @@ const player1 = {
   name: 'sonya',
   hp: 100,
   img: '',
-  weapon: 'Kunai',
+  weapon: ['Kunai', 'Футбольный мячик'],
   attack: function () {
     console.log('name ' + 'Fight...')
   }
@@ -31,8 +31,7 @@ function createPlayer(player, name, hp ) {
 
   const $life = document.createElement('div');
   $life.classList.add('life')
-  $life.style.width ='100%';
-  $life.innerText = hp
+  $life.style.width = hp + '%';
   const $name = document.createElement('div');
   $name.classList.add('name')
   $name.innerText = name;
